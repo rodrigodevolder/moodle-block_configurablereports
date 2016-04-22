@@ -233,7 +233,7 @@
 
 	$PAGE->navbar->add(get_string('managereports','block_configurable_reports'), $CFG->wwwroot.'/blocks/configurable_reports/managereport.php?courseid='.$report->courseid);
 	$PAGE->navbar->add($title, $CFG->wwwroot.'/blocks/configurable_reports/editcomp.php?id='.$id.'&amp;comp='.$comp);
-	$PAGE->navbar->add(get_string($pname,'block_configurable_reports'));
+	$PAGE->navbar->add($pluginclass->fullname);
 
 
 	$PAGE->set_title($title);

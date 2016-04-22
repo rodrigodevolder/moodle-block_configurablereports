@@ -117,7 +117,7 @@ if(! has_capability('block/configurable_reports:managereports', $context) && ! h
 			if(in_array($report->type,$pluginclass->reporttypes)){
 				if($pluginclass->unique && in_array($p,$currentplugins))
 					continue;
-				$optionsplugins[$p] = get_string($p,'block_configurable_reports');
+				$optionsplugins[$p] = $pluginclass->fullname;
 			}
 		}
 		asort($optionsplugins);
